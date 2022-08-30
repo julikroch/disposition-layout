@@ -6,5 +6,7 @@
   "admin/editor.dispositionlayout.order.items.title": "Title of the order prop",
   "admin/editor.dispositionlayout.order.items.description": "Description of the order prop",
   "admin/editor.dispositionlayout.show.items.title": "Title of the show prop",
-  "admin/editor.dispositionlayout.show.items.description": "Description of the show prop"
+  "admin/editor.dispositionlayout.show.items.description": "Description of the show prop",
+  "admin/editor.dispositionlayout.editorItemTitle.title": "Title of the item",
+  "admin/editor.dispositionlayout.editorItemTitle.description": "Description of the item prop"
 }

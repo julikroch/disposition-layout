@@ -70,9 +70,13 @@ Per example,
 - 2 -> "info-card#example"
 - 3 -> "flex-layout.row#two"
 
-If by mistake you delete an item from the list, in site editor, remember that you can go to `configuration` and restore the original theme settings. 
+If by mistake you delete an item from the list, in site editor, remember that you can go to `configuration` and restore the original theme settings.
 
 ![configuration](https://user-images.githubusercontent.com/50715158/128494098-6d5dff5d-c909-48a7-84de-d1578544cf93.png)
+
+### New Feature
+
+- You can edit the item name in site editor
 
 ## App not working
 
