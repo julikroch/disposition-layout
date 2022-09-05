@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Edit item name in site editor
+
 ## [2.0.1] - 2022-06-19
 
 ### Added
@@ -16,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2022-04-28
 
 - Potential fix for storefront's weird children behaviour
+
 ## [1.0.1] - 2021-10-24
 
 ## [1.0.0] - 2021-08-06

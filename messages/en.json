@@ -6,5 +6,7 @@
   "admin/editor.dispositionlayout.order.items.title": "Component ID",
   "admin/editor.dispositionlayout.order.items.description": "This number corresponds to a component on the list. If empty, you can delete it.",
   "admin/editor.dispositionlayout.show.items.title": "Visibility",
-  "admin/editor.dispositionlayout.show.items.description": "Controls if this component is shown or hidden"
+  "admin/editor.dispositionlayout.show.items.description": "Controls if this component is shown or hidden",
+  "admin/editor.dispositionlayout.editorItemTitle.title": "Item Title",
+  "admin/editor.dispositionlayout.editorItemTitle.description": "Allows you to change the item name"
 }
