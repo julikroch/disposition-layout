@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "disposition-layout",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
@@ -10,7 +10,9 @@
     "docs": "0.x",
     "store": "0.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vtex.render-runtime": "8.x"
+  },
   "registries": [
     "smartcheckout"
   ],

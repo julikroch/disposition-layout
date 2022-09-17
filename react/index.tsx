@@ -1,35 +1,71 @@
 import * as React from 'react'
+import { ReactChild, ReactElement, ReactNode } from 'react'
+import { NoSSR } from 'vtex.render-runtime'
 
 type Disposition = {
   order: number
   show: boolean
 }
 
-const DispositionLayout: StorefrontComponent = ({
+interface Props {
+  children: ReactNode
+  disposition: Disposition[]
+  ssr?: boolean
+}
+
+const DispositionLayout: any = ({
   children,
   disposition,
-}: {
-  children: React.ComponentType
-  disposition: Disposition[]
-}) => {
-  const array = React.Children.toArray(children) as any
-  const sortedChildren = disposition
-    ?.filter(({ order, show }) => order && show)
-    .map(({ order }) => {
-      if (array.length === 1) {
-        return array[0].props.children[order - 1]
-      }
+}: Props): ReactChild[] | ReactNode => {
+  const array = React.Children.toArray(children) as ReactChild[]
 
-      return array[order - 1]
-    })
+  const nestedChildren =
+    array.length === 1 ? (array[0] as ReactElement).props.children : null
+
+  const sortedChildren = disposition?.reduce((acc, item, i) => {
+    const { order, show } = item
+
+    if (!show) {
+      return acc
+    }
+
+    acc.splice(order - 1, 0, nestedChildren ? nestedChildren[i] : array[i])
+
+    return acc
+  }, [] as ReactChild[])
+
+  if (sortedChildren.length <= 0) {
+    return children
+  }
+
+  if (nestedChildren) {
+    return [
+      {
+        ...(array[0] as ReactElement),
+        props: { children: sortedChildren },
+      },
+    ]
+  }
 
   return sortedChildren
 }
 
-DispositionLayout.schema = {
+const Wrapper = (props: Props) => {
+  if (props?.ssr ?? true) {
+    return <DispositionLayout {...props} />
+  }
+
+  return (
+    <NoSSR>
+      <DispositionLayout {...props} />
+    </NoSSR>
+  )
+}
+
+Wrapper.schema = {
   title: 'admin/editor.dispositionlayout.title',
   description: 'admin/editor.dispositionlayout.description',
   type: 'object',
 }
 
-export default DispositionLayout
+export default Wrapper
