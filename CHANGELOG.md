@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Main function refactor
+- New prop for disabling SSR
+
 ## [2.1.0] - 2022-09-05
 
 ### Added
