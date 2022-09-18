@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "disposition-layout",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
@@ -13,18 +13,14 @@
   "dependencies": {
     "vtex.render-runtime": "8.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [],
   "billingOptions": {
     "support": {
       "url": "https://support.vtex.com/hc/requests"
     },
     "type": "free",
-    "availableCountries": [
-      "*"
-    ]
+    "availableCountries": ["*"]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
