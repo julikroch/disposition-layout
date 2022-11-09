@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "disposition-layout",
-  "version": "2.9.9-hkignore",
+  "version": "2.9.10-hkignore",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
