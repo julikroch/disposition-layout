@@ -1,7 +1,7 @@
 {
-  "vendor": "vtex",
+  "vendor": "juleriaque",
   "name": "disposition-layout",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
@@ -15,14 +15,5 @@
     "smartcheckout"
   ],
   "policies": [],
-  "billingOptions": {
-    "support": {
-      "url": "https://support.vtex.com/hc/requests"
-    },
-    "type": "free",
-    "availableCountries": [
-      "*"
-    ]
-  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
