@@ -1,7 +1,7 @@
 {
   "vendor": "juleriaque",
   "name": "disposition-layout",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "title": "VTEX Disposition Layout",
   "description": "A storefront-ready block that encompasses other blocks, used to organize components by ordering them in the site editor",
   "builders": {
